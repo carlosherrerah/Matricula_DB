@@ -1,0 +1,9 @@
+node_modules
+Personal
+Evaluacion
+
+.env
+_notas.txt
+*.doc
+*.docx
+
