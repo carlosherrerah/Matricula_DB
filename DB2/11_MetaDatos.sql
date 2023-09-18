@@ -1,17 +1,18 @@
 -- DB ESQUEMAS:  D_(DJs), F_(Fast Foods), WF_(countries), SinPrefijo(HR)
 
 -- MySQL
-select * from information_schema.schemadata
+select * from information_schema.schemata
 select * from information_schema.tables
 select * from information_schema.columns
+
+use information_schema;
+select * from schemata;
 
 select count(*) 
 from information_schema.tables
 where table_schema='esquemas'
   and table_name like 'd\_%';
 
-use information_schema;
-select * from tables
 
 -- ORACLE
 
