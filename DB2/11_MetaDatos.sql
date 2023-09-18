@@ -24,7 +24,3 @@ select * from user_tab_columns  -- Columnas de cada tabla
 SELECT * FROM TAB
 WHERE TNAME LIKE 'D\_%' ESCAPE '\';
 
---E2: Mostrar las tablas de la DB SinPrefijo
-
---E3: Mostrar el numero de columnas de cada tabla de la DB D_
-  
