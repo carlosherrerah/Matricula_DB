@@ -20,6 +20,7 @@ from employees e inner join departments d
   on e.department_id = d.department_id;
 
 -- Creacion de una Vista
+-- E2: Salario promedio de cada departamento
 create view vw_dep_avg
 as
 select department_id, round(avg(salary),2) promedio
@@ -32,3 +33,12 @@ select * from vw_dep_avg;
 select department_id, employee_id, promedio
 from employees e inner join vw_dep_avg vw using(department_id)
   
+-- With
+with t as (select department_id, round(avg(salary),2) promedio
+           from employees
+           where department_id is not null
+           group by department_id)
+select department_id, employee_id, promedio
+from employees e inner join t using(department_id)
+
+
