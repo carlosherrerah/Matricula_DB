@@ -30,5 +30,5 @@ group by department_id;
 select * from vw_dep_avg;
 
 select department_id, employee_id, promedio
-where employees e inner join vw_dep_avg vw using(department_id)
+from employees e inner join vw_dep_avg vw using(department_id)
   
