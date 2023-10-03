@@ -4,3 +4,4 @@
 
 --3 Numero de departmento con el salario promedio mas alto.
 
+16, 26, 
