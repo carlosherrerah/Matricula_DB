@@ -100,7 +100,7 @@ CONSTRAINT "CK_Birthdate" CHECK (BirthDate < getdate())
 )
 
 select max(idempleado) into a
-insert  into values (a+1, "pepito")
+insert  into personas values (a+1, "pepito")
 
 ------------------------------- A L T E R -------------------------------------
 
